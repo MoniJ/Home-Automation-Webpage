@@ -1,27 +1,31 @@
 <?php
 
-class newUser extends CI_Controller{
+class adminHouse extends CI_Controller{
 
   public function __construct()
   {
     parent::__construct();
-	  $this->load->helper('form');
-    if( $this->session->userdata('isLoggedIn') ) {
-		
+
+    if( !$this->session->userdata('isLoggedIn') ) {
         redirect('/login/show_login');
     }
   }
 
-  function show_newUser() {
+  /**
+   * This is the controller method that drives the application.
+   * After a user logs in, show_main() is called and the main
+   * application screen is set up.
+   */
+  function show_adminHouse() {
     
     $user_id = $this->session->userdata('id');
     $is_admin = $this->session->userdata('isAdmin');
     
-    $data['isAdmin'] = $is_admin;
+    $data['is_admin'] = $is_admin;
     $data['email'] = $this->session->userdata('email');
     $data['name'] = $this->session->userdata('name');
 
-    $this->load->view('newUser',$data);
+    $this->load->view('adminHouse',$data);
   }
 
   function create_new_user() {
@@ -32,10 +36,9 @@ class newUser extends CI_Controller{
       $saved = $this->user_m->create_new_user($userInfo);
     }
 
-    /*if ( isset($saved) && $saved ) {
+    if ( isset($saved) && $saved ) {
        echo "success";
-    }*/
+    }
   }
-
 
 }

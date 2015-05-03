@@ -24,14 +24,14 @@ font-size: 16px;"><a href="<?php echo base_url() ?>/index.php/login/logout_user"
                     	<img src="/part_one/assets/img/find_user.png" class="user-image img-responsive"/>
 					</li>
                     <li>
-                        <a class="active-menu"  href="show_main"><i class="fa fa-home fa-3x"></i>Welcome</a>
+                        <a class="active-menu"  href="http://localhost/part_one/index.php/main/show_main"><i class="fa fa-home fa-3x"></i>Welcome</a>
                     </li>
 					<?php if ($is_admin) : ?>
                     <li>
                         <a  href="http://localhost/part_one/index.php/newUser/show_newUser"><i class="fa fa-users fa-3x"></i>New user</a>
                     </li>
                     <li>
-                        <a  href="tab-panel.html"><i class="fa fa-edit fa-3x"></i>Admin home</a>
+                        <a  href="http://localhost/part_one/index.php/adminHouse/show_adminHouse"><i class="fa fa-edit fa-3x"></i>Admin home</a>
                     </li>
 				    <li>
                         <a   href="chart.html"><i class="fa fa-lightbulb-o fa-3x"></i>Control Home</a>
