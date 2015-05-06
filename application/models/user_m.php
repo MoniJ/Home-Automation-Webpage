@@ -48,9 +48,19 @@ class user_m extends CI_Model {
       $data['password'] = sha1($userData['password']);
 	  $data['firstName'] = $userData['firstName'];
       $data['lastName'] = $userData['lastName'];
+	  
       $data['isAdmin'] = (int) $userData['isAdmin'];
 
       return $this->db->insert('user',$data);
+    }
+	
+	 function  update_user($user_id, $data, $field) {
+
+      if($field == 'password') 
+          $data = sha1($data);
+      $this->db->where('id', $user_id);
+      $this->db->set($field, $data);
+      $this->db->update("user"); 
     }
 
 }

@@ -21,24 +21,24 @@ font-size: 16px;"><a href="<?php echo base_url() ?>/index.php/login/logout_user"
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
 					<li class="text-center">
-                    	<img src="/part_one/assets/img/find_user.png" class="user-image img-responsive"/>
+                    	<img src="<?php echo base_url(); ?>assets/img/casa.jpg" class="user-image img-responsive"/>
 					</li>
                     <li>
-                        <a class="active-menu"  href="show_main"><i class="fa fa-home fa-3x"></i>Welcome</a>
+                        <a class="active-menu"  href="<?php echo base_url(); ?>index.php/main/show_main"><i class="fa fa-home fa-3x"></i>Welcome</a>
                     </li>
 					<?php if ($is_admin) : ?>
                     <li>
-                        <a  href="http://localhost/part_one/index.php/newUser/show_newUser"><i class="fa fa-users fa-3x"></i>New user</a>
+                        <a  href="<?php echo base_url(); ?>index.php/newUser/show_newUser"><i class="fa fa-users fa-3x"></i>New user</a>
                     </li>
                     <li>
-                        <a  href="tab-panel.html"><i class="fa fa-edit fa-3x"></i>Admin home</a>
+                        <a  href="<?php echo base_url(); ?>index.php/adminHouse/show_adminHouse"><i class="fa fa-edit fa-3x"></i>Admin home</a>
                     </li>
 				    <li>
-                        <a   href="chart.html"><i class="fa fa-lightbulb-o fa-3x"></i>Control Home</a>
+                        <a   href="<?php echo base_url(); ?>index.php/control/allFloors"><i class="fa fa-lightbulb-o fa-3x">                           </i>Control Home</a>
                     </li>
 					<?php else : ?>
               		<li>
-                        <a  href="tab-panel.html"><i class="fa fa-lightbulb-o fa-3x"></i>Control home</a>
+                        <a  href="<?php echo base_url(); ?>index.php/control/allFloors"><i class="fa fa-lightbulb-o fa-3x"></i>Control home</a>
                     </li>
             		<?php endif; ?>
 					</ul>
@@ -65,415 +65,132 @@ font-size: 16px;"><a href="<?php echo base_url() ?>/index.php/login/logout_user"
                         <h5><?php echo $name ?> , Love to see you back. </h5>
                     </div>
                 </div>              
-                 <!-- /. ROW  -->
-                  <hr />
+                </hr>
                 <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-6">           
-			<div class="panel panel-back noti-box">
-                <span class="icon-box bg-color-red set-icon">
-                    <i class="fa fa-envelope-o"></i>
-                </span>
-                <div class="text-box" >
-                    <p class="main-text">120 New</p>
-                    <p class="text-muted">Messages</p>
-                </div>
-             </div>
-		     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-6">           
-			<div class="panel panel-back noti-box">
-                <span class="icon-box bg-color-green set-icon">
-                    <i class="fa fa-bars"></i>
-                </span>
-                <div class="text-box" >
-                    <p class="main-text">30 Tasks</p>
-                    <p class="text-muted">Remaining</p>
-                </div>
-             </div>
-		     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-6">           
-			<div class="panel panel-back noti-box">
-                <span class="icon-box bg-color-blue set-icon">
-                    <i class="fa fa-bell-o"></i>
-                </span>
-                <div class="text-box" >
-                    <p class="main-text">240 New</p>
-                    <p class="text-muted">Notifications</p>
-                </div>
-             </div>
-		     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-6">           
-			<div class="panel panel-back noti-box">
-                <span class="icon-box bg-color-brown set-icon">
-                    <i class="fa fa-rocket"></i>
-                </span>
-                <div class="text-box" >
-                    <p class="main-text">3 Orders</p>
-                    <p class="text-muted">Pending</p>
-                </div>
-             </div>
-		     </div>
-			</div>
-                 <!-- /. ROW  -->
-                <hr />                
-                <div class="row">
-                    <div class="col-md-6 col-sm-12 col-xs-12">           
-			<div class="panel panel-back noti-box">
-                <span class="icon-box bg-color-blue">
-                    <i class="fa fa-warning"></i>
-                </span>
-                <div class="text-box" >
-                    <p class="main-text">52 Important Issues to Fix </p>
-                    <p class="text-muted">Please fix these issues to work smooth</p>
-                    <p class="text-muted">Time Left: 30 mins</p>
-                    <hr />
-                    <p class="text-muted">
-                          <span class="text-muted color-bottom-txt"><i class="fa fa-edit"></i>
-                               Lorem ipsum dolor sit amet, consectetur adipiscing elit gthn. 
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit gthn. 
-                               </span>
-                    </p>
-                </div>
-             </div>
-		     </div>
-                    
-                    
-                    <div class="col-md-3 col-sm-12 col-xs-12">
-                        <div class="panel back-dash">
-                               <i class="fa fa-dashboard fa-3x"></i><strong> &nbsp; SPEED</strong>
-                             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing sit ametsit amet elit ftr. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                        </div>
-                       
+                <div class="col-md-12">
+                    <div class="jumbotron">
+                        <h1>SmartHome</h1>
+                        <p>Our project is made to provide to the homeowner an easy way to controll every ligth in their house by only clicking a button. It also helps to make the saving energy process a little less complicated by letting you identify what lights you leave turned on so you can turn them off while you are away.</p>
+
                     </div>
-                    <div class="col-md-3 col-sm-12 col-xs-12 ">
-                        <div class="panel ">
-          <div class="main-temp-back">
-            <div class="panel-body">
-              <div class="row">
-                <div class="col-xs-6"> <i class="fa fa-cloud fa-3x"></i> Newyork City </div>
-                <div class="col-xs-6">
-                  <div class="text-temp"> 10° </div>
                 </div>
-              </div>
             </div>
-          </div>
-          
-        </div>
-                     <div class="panel panel-back noti-box">
-                <span class="icon-box bg-color-green set-icon">
-                    <i class="fa fa-desktop"></i>
-                </span>
-                <div class="text-box" >
-                    <p class="main-text">Display</p>
-                    <p class="text-muted">Looking Good</p>
-                </div>
-             </div>
-			
-    </div>
-                        
-        </div>
-                 <!-- /. ROW  -->
-                <div class="row"> 
-                    
-                      
-                               <div class="col-md-9 col-sm-12 col-xs-12">                     
+                         <!-- /. ROW  -->
+            <div class="row">
+                <div class="col-md-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Bar Chart Example
+                            Project Features
                         </div>
                         <div class="panel-body">
-                            <div id="morris-bar-chart"></div>
-                        </div>
-                    </div>            
-                </div>
-                    <div class="col-md-3 col-sm-12 col-xs-12">                       
-                    <div class="panel panel-primary text-center no-boder bg-color-green">
-                        <div class="panel-body">
-                            <i class="fa fa-bar-chart-o fa-5x"></i>
-                            <h3>120 GB </h3>
-                        </div>
-                        <div class="panel-footer back-footer-green">
-                           Disk Space Available
-                            
-                        </div>
-                    </div>
-                    <div class="panel panel-primary text-center no-boder bg-color-red">
-                        <div class="panel-body">
-                            <i class="fa fa-edit fa-5x"></i>
-                            <h3>20,000 </h3>
-                        </div>
-                        <div class="panel-footer back-footer-red">
-                            Articles Pending
-                            
-                        </div>
-                    </div>                         
-                        </div>
-                
-           </div>
-                 <!-- /. ROW  -->
-                <div class="row" >
-                    <div class="col-md-3 col-sm-12 col-xs-12">
-  <div class="panel panel-primary text-center no-boder bg-color-green">
-                        <div class="panel-body">
-                            <i class="fa fa-comments-o fa-5x"></i>
-                            <h4>200 New Comments </h4>
-                             <h4>See All Comments  </h4>
-                        </div>
-                        <div class="panel-footer back-footer-green">
-                             <i class="fa fa-rocket fa-5x"></i>
-                            Lorem ipsum dolor sit amet sit sit, consectetur adipiscing elitsit sit gthn ipsum dolor sit amet ipsum dolor sit amet
-                            
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-md-9 col-sm-12 col-xs-12">
-               
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                           Responsive Table Example
-                        </div>
-                        <div class="panel-body">
-                            <div class="table-responsive">
-                                <table class="table table-striped table-bordered table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>First Name</th>
-                                            <th>Last Name</th>
-                                            <th>Username</th>
-                                             <th>User No.</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
-                                            <td>100090</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
-                                            <td>100090</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Larry</td>
-                                            <td>the Bird</td>
-                                            <td>@twitter</td>
-                                            <td>100090</td>
-                                        </tr>
-                                         <tr>
-                                            <td>1</td>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
-                                            <td>100090</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
-                                            <td>100090</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Larry</td>
-                                            <td>the Bird</td>
-                                            <td>@twitter</td>
-                                            <td>100090</td>
-                                        </tr>
-
-                                    </tbody>
-                                </table>
+                            <div class="panel-group" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Forms</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse" style="height: 0px;">
+                                        <div class="panel-body">
+                                            This functonality can be found in many sections of the page. Login, new user registration, profile, for adding rooms, etc.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">List and create records</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse" style="height: auto;">
+                                        <div class="panel-body">
+                                           We create new records when registering a new user or adding a floor, a room or a device. And we list when user looks for the devices registered before.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed">AJAX</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseThree" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            We used AJAX for profile editing, also for deleting rooms, floors and devices. We used jQuery in a lot of places of the webpage to make animations.
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" class="collapsed">MVC</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseFour" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            To be sure that we were using the MVC structure correctly we decide to implement our project with a PHP framework. We used CodeIgniter because it was the easiest to install in the Raspberry.
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    
-                    </div>
                 </div>
-                 <!-- /. ROW  -->
-                <div class="row">
-                    <div class="col-md-6 col-sm-12 col-xs-12">
-                   
-                    <div class="chat-panel panel panel-default chat-boder chat-panel-head" >
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-comments fa-fw"></i>
-                            Chat Box
-                            <div class="btn-group pull-right">
-                                <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                                    <i class="fa fa-chevron-down"></i>
-                                </button>
-                                <ul class="dropdown-menu slidedown">
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-refresh fa-fw"></i>Refresh
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-check-circle fa-fw"></i>Available
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-times fa-fw"></i>Busy
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-clock-o fa-fw"></i>Away
-                                        </a>
-                                    </li>
-                                    <li class="divider"></li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-sign-out fa-fw"></i>Sign Out
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                           Use cases
                         </div>
-
                         <div class="panel-body">
-                            <ul class="chat-box">
-                                <li class="left clearfix">
-                                    <span class="chat-img pull-left">
-                                        <img src="/part_one/assets/img/1.png" alt="User" class="img-circle" />
-                                    </span>
-                                    <div class="chat-body">                                        
-                                            <strong >Jack Sparrow</strong>
-                                            <small class="pull-right text-muted">
-                                                <i class="fa fa-clock-o fa-fw"></i>12 mins ago
-                                            </small>                                      
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="right clearfix">
-                                    <span class="chat-img pull-right">
-
-                                        <img src="/part_one/assets/img/2.png" alt="User" class="img-circle" />
-                                    </span>
-                                    <div class="chat-body clearfix">
-                                        
-                                            <small class=" text-muted">
-                                                <i class="fa fa-clock-o fa-fw"></i>13 mins ago</small>
-                                            <strong class="pull-right">Jhonson Deed</strong>
-                                      
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="left clearfix">
-                                    <span class="chat-img pull-left">
-                                         <img src="/part_one/assets/img/3.png" alt="User" class="img-circle" />
-                                    </span>
-                                    <div class="chat-body clearfix">
-                                        
-                                            <strong >Jack Sparrow</strong>
-                                            <small class="pull-right text-muted">
-                                                <i class="fa fa-clock-o fa-fw"></i>14 mins ago</small>
-                                        
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="right clearfix">
-                                    <span class="chat-img pull-right">
-                                         <img src="/part_one/assets/img/4.png" alt="User" class="img-circle" />
-                                    </span>
-                                    <div class="chat-body clearfix">
-                                      
-                                            <small class=" text-muted">
-                                                <i class="fa fa-clock-o fa-fw"></i>15 mins ago</small>
-                                            <strong class="pull-right">Jhonson Deed</strong>
-                                       
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
-                                        </p>
-                                    </div>
-                                </li>
-                                    <li class="left clearfix">
-                                    <span class="chat-img pull-left">
-                                        <img src="/part_one/assets/img/1.png" alt="User" class="img-circle" />
-                                    </span>
-                                    <div class="chat-body">                                        
-                                            <strong >Jack Sparrow</strong>
-                                            <small class="pull-right text-muted">
-                                                <i class="fa fa-clock-o fa-fw"></i>12 mins ago
-                                            </small>                                      
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="right clearfix">
-                                    <span class="chat-img pull-right">
-                                       <img src="/part_one/assets/img/2.png" alt="User" class="img-circle" />
-                                    </span>
-                                    <div class="chat-body clearfix">
-                                        
-                                            <small class=" text-muted">
-                                                <i class="fa fa-clock-o fa-fw"></i>13 mins ago</small>
-                                            <strong class="pull-right">Jhonson Deed</strong>
-                                      
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
-                                        </p>
-                                    </div>
-                                </li>
-                            </ul>
+                            <img src="<?php echo base_url() ?>/assets/img/casosdeusoFinal.jpg" class="img-responsive" style="display: block;
+    margin-left: auto;
+    margin-right: auto"/>
                         </div>
-
                         <div class="panel-footer">
-                            <div class="input-group">
-                                <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message to send..." />
-                                <span class="input-group-btn">
-                                    <button class="btn btn-warning btn-sm" id="btn-chat">
-                                        Send
-                                    </button>
-                                </span>
-                            </div>
+                           <br>
                         </div>
-
                     </div>
-                    
                 </div>
-                    <div class="col-md-6 col-sm-12 col-xs-12">
-                         <div class="panel panel-default">
+     
+            </div>
+            
+            <div class="row">
+               <div class="col-md-12">
+                    <div class="panel panel-default">
                         <div class="panel-heading">
-                           Label Examples
+                            Team
                         </div>
                         <div class="panel-body">
-                            <span class="label label-default">Default</span>
-<span class="label label-primary">Primary</span>
-<span class="label label-success">Success</span>
-<span class="label label-info">Info</span>
-<span class="label label-warning">Warning</span>
-<span class="label label-danger">Danger</span>
-                        </div>
+                            <div class="col-md-4 col-sm-4">
+                                <div class="well">
+                                    <h4>Gabriel Reséndiz</h4>
+                                    <h5>A01201944</h5>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <div class="well">
+                                    <h4>Mónica Fernanda Jiménez</h4>
+                                    <h5>A01205728</h5>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <div class="well">
+
+                                    <h4>Mariana Prado Ayala</h4>
+                                    <h5>A01065658</h5>
+
+                                </div>
+                            </div>
                     </div>
-                         
-                         <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Donut Chart Example
-                        </div>
-                        <div class="panel-body">
-                            <div id="morris-donut-chart"></div>
-                        </div>
                     </div>
-                      
                     </div>
-                </div>     
-                 <!-- /. ROW  -->           
-    </div>
+                 
+                </div>
              <!-- /. PAGE INNER  -->
             </div>
          <!-- /. PAGE WRAPPER  -->
