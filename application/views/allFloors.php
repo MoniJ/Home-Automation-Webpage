@@ -15,14 +15,22 @@
   <div style="color: white;
 padding: 15px 50px 5px 50px;
 float: right;
+<<<<<<< HEAD
 font-size: 16px;">&nbsp; <a href="<?php echo base_url() ?>index.php/login/logout_user" class="btn btn-danger square-btn-adjust">Logout</a>  </div>
+=======
+font-size: 16px;"> Last access : May 2015 &nbsp; <a href="#" class="btn btn-danger square-btn-adjust">Logout</a> </div>
+>>>>>>> origin/master
         </nav>   
                    <!-- /. NAV TOP  -->
                 <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
 					<li class="text-center">
+<<<<<<< HEAD
                     	<img src="<?php echo base_url(); ?>assets/img/casa.jpg" class="user-image img-responsive"/>
+=======
+                    	<img src="<?php echo base_url(); ?>assets/img/find_user.png" class="user-image img-responsive"/>
+>>>>>>> origin/master
 					</li>
                     <li>
                         <a  href="<?php echo base_url(); ?>index.php/main/show_main"><i class="fa fa-home fa-3x"></i>Welcome</a>
@@ -77,8 +85,13 @@ font-size: 16px;">&nbsp; <a href="<?php echo base_url() ?>index.php/login/logout
                     
                     <div class="panel panel-primary text-center no-boder bg-color-green">
                         <div class="panel-body">
+<<<<<<< HEAD
                             <i class="fa fa-home fa-5x"></i>
                             <h3><?php echo "Level: ".$floors_item['level'] ?></h3>
+=======
+                            <i class="fa fa-bar-chart-o fa-5x"></i>
+                            <h3><?php echo "Nivel: ".$floors_item['level'] ?></h3>
+>>>>>>> origin/master
                         </div>
                         <div class="panel-footer back-footer-green">
                             <?php echo $floors_item['name'] ?>

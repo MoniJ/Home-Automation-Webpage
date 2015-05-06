@@ -29,7 +29,12 @@ class Control extends CI_Controller {
         public function viewRooms($id = NULL)
         {
             $data['rooms'] = $this->floors_model->get_floors($id);
+<<<<<<< HEAD
             $data['title'] = 'Rooms';
+=======
+            //$data['title'] = $data['rooms']['Nivel'];
+            $data['title'] = 'Habitaciones';
+>>>>>>> origin/master
             
             if (empty($data['rooms']))
             {
@@ -51,6 +56,7 @@ class Control extends CI_Controller {
             }
             
         }
+<<<<<<< HEAD
         
         public function viewDevices($id = NULL)
         {
@@ -77,4 +83,6 @@ class Control extends CI_Controller {
             }
             
         }
+=======
+>>>>>>> origin/master
 }

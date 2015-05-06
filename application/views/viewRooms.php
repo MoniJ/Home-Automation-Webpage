@@ -15,14 +15,22 @@
   <div style="color: white;
 padding: 15px 50px 5px 50px;
 float: right;
+<<<<<<< HEAD
 font-size: 16px;">&nbsp; <a href="<?php echo base_url() ?>index.php/login/logout_user" class="btn btn-danger square-btn-adjust">Logout</a> </div>
+=======
+font-size: 16px;"> Last access : May 2015 &nbsp; <a href="#" class="btn btn-danger square-btn-adjust">Logout</a> </div>
+>>>>>>> origin/master
         </nav>   
                    <!-- /. NAV TOP  -->
                 <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
 					<li class="text-center">
+<<<<<<< HEAD
                     	<img src="<?php echo base_url(); ?>assets/img/casa.jpg" class="user-image img-responsive"/>
+=======
+                    	<img src="<?php echo base_url(); ?>assets/img/find_user.png" class="user-image img-responsive"/>
+>>>>>>> origin/master
 					</li>
                     <li>
                         <a  href="<?php echo base_url(); ?>index.php/main/show_main"><i class="fa fa-home fa-3x"></i>Welcome</a>
@@ -59,7 +67,11 @@ font-size: 16px;">&nbsp; <a href="<?php echo base_url() ?>index.php/login/logout
                 <div class="row">
                     <div class="col-md-12">
                      <h2>Take the control of your home!</h2>   
+<<<<<<< HEAD
                         <h5>Click on one of the rooms to see all their devices available!</h5>
+=======
+                        <h5>Click on one of the floors to see all their rooms available!</h5>
+>>>>>>> origin/master
                        
                     </div>
                 </div>
@@ -71,21 +83,33 @@ font-size: 16px;">&nbsp; <a href="<?php echo base_url() ?>index.php/login/logout
                 
                 <div class="row">
                     
+<<<<<<< HEAD
                 <?php foreach ($rooms as $rooms_item): ?>  
                 <a href="<?php echo base_url(); ?>index.php/control/viewDevices/<?php echo $rooms_item['id']; ?>">
+=======
+                <?php foreach ($rooms as $rooms_item): ?>    
+>>>>>>> origin/master
                 <div class="col-md-4 col-sm-4">
                     
                     <div class="panel panel-primary text-center no-boder bg-color-green">
                         <div class="panel-body">
+<<<<<<< HEAD
                             <i class="fa fa-home fa-5x"></i>
                             <h3><?php echo "Level: ".$rooms_item['idFloor'] ?></h3>
+=======
+                            <i class="fa fa-bar-chart-o fa-5x"></i>
+                            <h3><?php echo "Nivel: ".$rooms_item['idFloor'] ?></h3>
+>>>>>>> origin/master
                         </div>
                         <div class="panel-footer back-footer-green">
                             <?php echo $rooms_item['name'] ?>
                         </div>
                     </div>
                 </div>
+<<<<<<< HEAD
                 </a>
+=======
+>>>>>>> origin/master
                 <?php endforeach ?>
                     
                 </div>

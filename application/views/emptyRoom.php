@@ -15,14 +15,22 @@
   <div style="color: white;
 padding: 15px 50px 5px 50px;
 float: right;
+<<<<<<< HEAD
 font-size: 16px;">&nbsp; <a href="<?php echo base_url() ?>index.php/login/logout_user" class="btn btn-danger square-btn-adjust">Logout</a>  </div>
+=======
+font-size: 16px;"> Last access : May 2015 &nbsp; <a href="#" class="btn btn-danger square-btn-adjust">Logout</a> </div>
+>>>>>>> origin/master
         </nav>   
                    <!-- /. NAV TOP  -->
                 <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
 					<li class="text-center">
+<<<<<<< HEAD
                     	<img src="<?php echo base_url(); ?>assets/img/casa.jpg" class="user-image img-responsive"/>
+=======
+                    	<img src="<?php echo base_url(); ?>assets/img/find_user.png" class="user-image img-responsive"/>
+>>>>>>> origin/master
 					</li>
                     <li>
                         <a  href="<?php echo base_url(); ?>index.php/main/show_main"><i class="fa fa-home fa-3x"></i>Welcome</a>
@@ -59,7 +67,11 @@ font-size: 16px;">&nbsp; <a href="<?php echo base_url() ?>index.php/login/logout
                 <div class="row">
                     <div class="col-md-12">
                      <h2>Take the control of your home!</h2>   
+<<<<<<< HEAD
                         <h5>Click on one of the rooms to see all their devices available!</h5>
+=======
+                        <h5>Click on one of the floors to see all their rooms available!</h5>
+>>>>>>> origin/master
                        
                     </div>
                 </div>
@@ -69,7 +81,11 @@ font-size: 16px;">&nbsp; <a href="<?php echo base_url() ?>index.php/login/logout
                 <h2><?php echo $title ?></h2>
                 <hr />
                 
+<<<<<<< HEAD
                 No rooms have been recorded on this floor yet.
+=======
+                Este piso aún no tiene habitaciones registradas.
+>>>>>>> origin/master
 
               
                 
